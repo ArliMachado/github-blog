@@ -30,4 +30,33 @@ export const TitleContent = styled.div`
     font-weight: 700;
     color: ${({ theme }) => theme['base-title']};
   }
+
+  a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: ${({ theme }) => theme.blue};
+    gap: 0.5rem;
+    font-size: 0.75rem;
+  }
+`
+export const Info = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+`
+
+export const InfoItem = styled.span`
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  color: ${({ theme }) => theme['base-subtitle']};
+
+  svg {
+    width: 1.125rem;
+    height: 1.125rem;
+    color: ${({ theme }) => theme['base-label']};
+  }
 `
