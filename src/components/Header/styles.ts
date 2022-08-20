@@ -8,7 +8,6 @@ export const Container = styled.div`
   background-size: contain;
 
   display: flex;
-  align-items: center;
   justify-content: center;
 
   img {
