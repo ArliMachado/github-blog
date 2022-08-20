@@ -8,6 +8,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { InfoItem } from '../../../../components/InfoItem'
 
 export function Profile() {
   return (
@@ -27,18 +28,9 @@ export function Profile() {
           pulvinar vel mass.
         </p>
         <S.Info>
-          <S.InfoItem>
-            <FontAwesomeIcon icon={faGithub} />
-            cameronwll
-          </S.InfoItem>
-          <S.InfoItem>
-            <FontAwesomeIcon icon={faBuilding} />
-            Rocketseat
-          </S.InfoItem>
-          <S.InfoItem>
-            <FontAwesomeIcon icon={faUserGroup} />
-            32 seguidores
-          </S.InfoItem>
+          <InfoItem icon={faGithub} description="cameronwll" />
+          <InfoItem icon={faBuilding} description="Rocketseat" />
+          <InfoItem icon={faUserGroup} description="32 seguidores" />
         </S.Info>
       </S.ProfileInfo>
     </S.Container>

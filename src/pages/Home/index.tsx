@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { Profile } from './components/Profile'
 import * as S from './styles'
 
@@ -17,7 +18,9 @@ export function Home() {
       <S.PostContent>
         <S.PostItem>
           <S.PostTitle>
-            <h1>JavaScript data types and data structures</h1>
+            <Link to="/post">
+              <h1>JavaScript data types and data structures</h1>
+            </Link>
             <span>Há 1 dia</span>
           </S.PostTitle>
           <S.PostDescription>
